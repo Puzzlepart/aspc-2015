@@ -1,1 +1,55 @@
-http://qa-sok.udir.no/_api/search/query?selectproperties='Title,BarnehagefaktaNsrid,BarnehagefaktaFylkesnavn,BarnehagefaktaKommunenavn,BarnehagefaktaBesoksAdresseAdresselinje,BarnehagefaktaBesoksAdressePostnummer,BarnehagefaktaEierform,BarnehagefaktaAntallBarn,BarnehagefaktaAlder,BarnehagefaktaKoordinatLat,BarnehagefaktaKoordinatLng'&refiners='BarnehagefaktaFylkesnummerOgFylkesnavn,BarnehagefaktaFylkesnummerOgKommunenavn(filter=1000/0/*),BarnehagefaktaEierform,BarnehagefaktaAlder,BarnehagefaktaAntallBarnInteger(discretize=manual/26/51/76/101)'&sourceid='7ccf78ff-be09-45f3-b3cb-6ca2de11154f'&startrow=0&rowlimit=20&clienttype='AllResultsQuery'&sortlist='Rank:descending'&querytext='*'
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js">
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="../../SiteAssets/estatech/style/estatech.slick-theme.css" />
+
+<style type="text/css">
+    .bildekarusell-container {
+        width: 600px;
+        height: 310px;
+    }
+
+        .bildekarusell-container img {
+            max-width: 600px;
+            height: 300px;
+        }
+</style>
+<script type="text/javascript">
+    var imagesFolder = _spPageContextInfo.webServerRelativeUrl + "/Delte dokumenter/Bilder";
+
+    jQuery.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/GetFolderByServerRelativeUrl('" + imagesFolder + "')/files?$select=ServerRelativeUrl",
+        type: 'GET',
+        headers: {
+            "Accept": "application/json;odata=nometadata",
+        },
+        success: function (d) {
+            if (d.value.length > 0) {
+                jQuery.each(d.value, function (id, val) {
+                    jQuery(".bildekarusell-container").append("<div><img src='" + val.ServerRelativeUrl + "' /></div>");
+                });
+
+                jQuery('.bildekarusell-container').slick({
+                    dots: true,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+                jQuery('.bildekarusell-container').show();
+            } else {
+                jQuery("#ingenbilder").click(function () {
+                    window.location.replace(imagesFolder);
+                })
+                jQuery("#ingenbilder").show();
+            }
+        }
+    });
+</script>
+
+<div class="bildekarusell-container" style="display: none;">
+
+</div>
+<img style="cursor:pointer;display:none;" src="http://placehold.it/600x310/22B14C/FFFFFFF&text=Legg+til+prospektbilder+her" id="ingenbilder" />
