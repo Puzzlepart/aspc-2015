@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SherpaConfig", "SherpaConfi
 		..\ASPC.Sherpa\config\empirecontenttypes.json = ..\ASPC.Sherpa\config\empirecontenttypes.json
 		..\ASPC.Sherpa\config\empirefields.json = ..\ASPC.Sherpa\config\empirefields.json
 		..\ASPC.Sherpa\config\empiresitehierarchy.json = ..\ASPC.Sherpa\config\empiresitehierarchy.json
+		..\ASPC.Sherpa\config\empiretaxonomy.json = ..\ASPC.Sherpa\config\empiretaxonomy.json
 	EndProjectSection
 EndProject
 Global

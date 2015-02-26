@@ -1,20 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-    <CustomAction
-      ScriptSrc="~SiteCollection/SiteAssets/js/jquery-1.11.2.min.js"
-      Location="ScriptLink"
-      Sequence="10">
-    </CustomAction>
-    <CustomAction
-      ScriptSrc="~SiteCollection/SiteAssets/js/angular.min.js"
-      Location="ScriptLink"
-      Sequence="20">
-    </CustomAction>
-    <CustomAction
-  ScriptSrc="~SiteCollection/SiteAssets/js/main.js"
-  Location="ScriptLink"
-  Sequence="30">
-    </CustomAction>
-  </Elements>
+  <CustomAction
+    ScriptSrc="~SiteCollection/SiteAssets/js/jquery-1.11.2.min.js"
+    Location="ScriptLink"
+    Sequence="10">
+  </CustomAction>
+  <CustomAction
+ScriptSrc="~SiteCollection/SiteAssets/js/main.js"
+Location="ScriptLink"
+Sequence="30">
+  </CustomAction>
 </Elements>

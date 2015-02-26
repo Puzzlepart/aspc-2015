@@ -5,7 +5,7 @@
     "ContentTypeConfigurations": [
         "empirecontenttypes.json"
     ],
-    "TaxonomyConfigurations": [],
+    "TaxonomyConfigurations": ["empiretaxonomy.json"],
     "SandboxedSolutions": ["ASPC.Appsters.wsp"],
     "SiteFeatures" : [{"FeatureId":  "a78bcd4b-fed2-4acb-b1cb-bd59572ee312","FeatureName": "ASPC.SharePoint.Deploy ScriptLinks" ,"ReactivateAlways": "true"}],
      "RootWeb": {
