@@ -20,11 +20,9 @@
 <asp:content id="Content3" contentplaceholderid="PlaceHolderAdditionalPageHead" runat="server">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js" type="text/javascript"></script>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/js/appsters.generics.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
     <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/js/appsters.stats.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
-    
-    <SharePointWebControls:CssRegistration Name="&lt;% $SPUrl:~sitecollection/SiteAssets/css/appsters15.style.css %&gt;" runat="server" After="corev15.css" >
-        
-    </SharePointWebControls:CssRegistration>
+    <SharePoint:CssRegistration Name="&lt;% $SPUrl:~sitecollection/SiteAssets/css/appsters15.css %&gt;" runat="server" After="corev15.css" ></SharePoint:CssRegistration>
     <script src="https://www.google.com/jsapi" type="text/javascript" ></script>
     <meta name="CollaborationServer" content="SharePoint Team Web Site" />
 </asp:content>

@@ -3,6 +3,9 @@
 Appsters.Stats = Appsters.Stats || {};
 
 Appsters.Stats.InitPage = function () {
+    // Load the Visualization API and the piechart package.
+    google.load('visualization', '1.1', { 'packages': ['corechart', 'bar'] });
+
 	var statisticsAngularApp = angular.module('StatisticsAngularApp', []);
 
 	// Bind angular app controllers
@@ -40,7 +43,7 @@ Appsters.Stats.DrawContentTypeDistributionChart = function (data) {
 
         var contentTypeRefiner = getValueByProperty(data.d.query.PrimaryQueryResult.RefinementResults.Refiners.results, 'Name', 'SPContentType');
 
-        SmartPortal.Statistics.AddChartRefinementData(contentTypeRefiner, contentTypesData);
+        Appsters.Stats.AddChartRefinementData(contentTypeRefiner, contentTypesData);
 
         var contentTypesOptions = {
             'width': 390,
@@ -58,7 +61,10 @@ Appsters.Stats.DrawContentTypeDistributionChart = function (data) {
 function HandleError(data, status, headers, config) {
     console.log("Error: " + data + " " + status);
 };
-function isNumber(obj) { return !isNaN(parseFloat(obj)); };
+
+function isNumber(obj) {
+     return !isNaN(parseFloat(obj));
+};
 
 Appsters.Stats.TransformSearchResultToAngularReadableFormat = function (data) {
     var pages = [];
@@ -74,4 +80,30 @@ Appsters.Stats.TransformSearchResultToAngularReadableFormat = function (data) {
         });
     });
     return pages;
+};
+
+Appsters.Stats.AddChartRefinementData = function (refinerData, chartData) {
+    var otherCategory = 0;
+    for (var i = 0; i < refinerData.Entries.results.length; i++) {
+        var refinerName = Appsters.Stats.GetContentTypeNameFromRenderedValue(refinerData.Entries.results[i].RefinementName);
+        var refinerCount = Number(refinerData.Entries.results[i].RefinementCount);
+        if (i <= 5) {
+            chartData.addRow([refinerName, refinerCount]);
+        } else {
+            otherCategory = otherCategory + refinerCount;
+        }
+    }
+    if (otherCategory > 0) {
+        chartData.addRow(['Other', otherCategory]);
+    }
+};
+
+Appsters.Stats.GetContentTypeNameFromRenderedValue = function (contentTypeString) {
+    var lineByLine = contentTypeString.split(/\n/g);
+    if (lineByLine.length <= 1) {
+        return contentTypeString;
+    }
+    else {
+        return lineByLine[lineByLine.length - 1];
+    }
 };

@@ -93,8 +93,10 @@
       <DependentUpon>WebSiteAssets.feature</DependentUpon>
     </Content>
     <Content Include="SPI\ScriptLinks\Elements.xml" />
+    <Content Include="SPI\SiteAssets\css\appsters15.css" />
     <Content Include="SPI\SiteAssets\Elements.xml" />
     <Content Include="SPI\SiteAssets\js\angular.min.js" />
+    <Content Include="SPI\SiteAssets\js\appsters.generics.js" />
     <Content Include="SPI\SiteAssets\js\jquery-1.11.2.min.js" />
     <Content Include="SPI\SiteAssets\js\main.js" />
     <Content Include="SPI\SiteAssets\js\appsters.stats.js" />

@@ -5,6 +5,7 @@
     <File Path="js\angular.min.js" Url="js/angular.min.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
     <File Path="js\jquery-1.11.2.min.js" Url="js/jquery-1.11.2.min.js"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
     <File Path="js\appsters.stats.js" Url="js/appsters.stats.js"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
-    <File Path="css\appsters15.css" Url="css/appsters15.css" />
+    <File Path="css\appsters15.css" Url="css/appsters15.css" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="js\appsters.generics.js" Url="js/appsters.generics.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
   </Module>
 </Elements>
