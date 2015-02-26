@@ -3,4 +3,4 @@
   <Module Name="SitePages" Path="SitePages" Url="SitePages">
     <File Path="Dashboard.aspx" Url="Dashboard.aspx" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
   </Module>
-</Elements>
+</Elements> 

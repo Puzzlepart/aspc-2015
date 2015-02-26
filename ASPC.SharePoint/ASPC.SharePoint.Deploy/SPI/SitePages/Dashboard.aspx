@@ -20,21 +20,8 @@
 <asp:content id="Content3" contentplaceholderid="PlaceHolderAdditionalPageHead" runat="server">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js" type="text/javascript"></script>
-    
-    
     <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/js/appsters.stats.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
     <meta name="CollaborationServer" content="SharePoint Team Web Site" />
-    <sharepoint:styleblock runat="server">
-        .s4-nothome {
-	        display:none;
-        }
-    </sharepoint:styleblock>
-    <sharepoint:scriptblock runat="server">
-	    var navBarHelpOverrideKey = "WSSEndUser";
-	</sharepoint:scriptblock>
-    <SharePoint:ScriptBlock runat="server">
-       console.log("works");
-    </SharePoint:ScriptBlock>	
 </asp:content>
 <asp:content contentplaceholderid="PlaceHolderSearchArea" runat="server">
 	<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
@@ -50,17 +37,12 @@
 </asp:content>
 <asp:content contentplaceholderid="PlaceHolderMain" runat="server">
     <div class="appsters" ng-app="StatisticsAngularApp">
-        <div ng-controller="keyStatisticsCtrl"><div>{{TracerBullet}}</div></div>
-
+        <div ng-controller="keyStatisticsCtrl">
+            <div>{{TracerBullet}}</div>
+        </div>
     </div>
     
     <script type="text/javascript">
-
-        _spBodyOnLoadFunctions.push(function () {
-            jQuery(document).ready(
-                function () { Appsters.Stats.InitPage(); }
-            );
-        });
+        Appsters.Stats.InitPage();
     </script>
-
 </asp:content>
