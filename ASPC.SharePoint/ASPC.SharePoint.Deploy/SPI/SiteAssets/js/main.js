@@ -1,2 +1,2 @@
-﻿var appsters = appsters || {};
+﻿var Appsters = Appsters || {};
 // code goes here

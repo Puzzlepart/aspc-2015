@@ -3,6 +3,7 @@
   <Module Name="SiteAssets" Path="SiteAssets" Url="SiteAssets">
     <File Path="js\main.js" Url="js/main.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
     <File Path="js\angular.min.js" Url="js/angular.min.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
-    <File Path="js\jquery-1.11.2.min.js" Url="js/jquery-1.11.2.min.js" />
+    <File Path="js\jquery-1.11.2.min.js" Url="js/jquery-1.11.2.min.js"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="js\appsters.stats.js" Url="js/appsters.stats.js"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
   </Module>
 </Elements>
