@@ -21,6 +21,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js" type="text/javascript"></script>
     <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/js/appsters.stats.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    
+    <SharePointWebControls:CssRegistration Name="&lt;% $SPUrl:~sitecollection/SiteAssets/css/appsters15.style.css %&gt;" runat="server" After="corev15.css" >
+        
+    </SharePointWebControls:CssRegistration>
+    <script src="https://www.google.com/jsapi" type="text/javascript" ></script>
     <meta name="CollaborationServer" content="SharePoint Team Web Site" />
 </asp:content>
 <asp:content contentplaceholderid="PlaceHolderSearchArea" runat="server">
@@ -39,6 +44,12 @@
     <div class="appsters" ng-app="StatisticsAngularApp">
         <div ng-controller="keyStatisticsCtrl">
             <div>{{TracerBullet}}</div>
+        </div>
+        <div class="stats-row">
+            <div class="stats-object" ng-controller="contentTypesChartCtrl" style="margin-right:20px">
+                <h2 class="ms-webpart-titleText">Content Type Distribution</h2>
+                <div id="content-type-chart"></div>
+            </div>
         </div>
     </div>
     

@@ -6,5 +6,6 @@
     <ProjectItemFile Source="js\angular.min.js" Target="SiteAssets\js\" Type="ElementFile" />
     <ProjectItemFile Source="js\jquery-1.11.2.min.js" Target="SiteAssets\js\" Type="ElementFile" />
     <ProjectItemFile Source="js\appsters.stats.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="css\appsters15.css" Target="SiteAssets\css\" Type="ElementFile" />
   </Files>
 </ProjectItem>
