@@ -15,9 +15,9 @@ namespace ASPC.TakeDown
         // GET api/<controller>
         public string Get()
         {
-            var webUri = new Uri("http://aker-dev-tarjei.cloudapp.net/");
-            const string userName = "tarjeieo@puzzlepart.com";
-            const string password = "StrongestM4n";
+            var webUri = new Uri("http://xxx-dev-tarjei.cloudapp.net/");
+            const string userName = "a";
+            const string password = "b";
             var securePassword = new SecureString();
             foreach (var c in password)
             {

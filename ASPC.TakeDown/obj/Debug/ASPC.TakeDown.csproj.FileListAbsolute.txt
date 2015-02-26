@@ -61,3 +61,6 @@ c:\users\mikael\documents\visual studio 2013\Projects\ASPC.TakeDown\bin\System.W
 c:\users\mikael\documents\visual studio 2013\Projects\ASPC.TakeDown\obj\Debug\ASPC.TakeDown.csprojResolveAssemblyReference.cache
 c:\users\mikael\documents\visual studio 2013\Projects\ASPC.TakeDown\obj\Debug\ASPC.TakeDown.dll
 c:\users\mikael\documents\visual studio 2013\Projects\ASPC.TakeDown\obj\Debug\ASPC.TakeDown.pdb
+C:\repos\aspc-2015\ASPC.TakeDown\obj\Debug\ASPC.TakeDown.csprojResolveAssemblyReference.cache
+C:\repos\aspc-2015\ASPC.TakeDown\obj\Debug\ASPC.TakeDown.dll
+C:\repos\aspc-2015\ASPC.TakeDown\obj\Debug\ASPC.TakeDown.pdb
