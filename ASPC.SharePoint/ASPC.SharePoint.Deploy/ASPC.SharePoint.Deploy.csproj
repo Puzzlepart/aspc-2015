@@ -52,6 +52,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\SiteScriptLinks\SiteScriptLinks.feature">
+      <FeatureId>{4f61543d-a304-46a2-a8ea-c056a609a5b3}</FeatureId>
+    </None>
     <None Include="Features\WebSiteAssets\WebSiteAssets.feature">
       <FeatureId>{891069d6-85ad-4696-91f1-e40997a37ecd}</FeatureId>
     </None>
@@ -62,6 +65,9 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SPI\ScriptLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2ef8ac82-3028-470c-a954-f075f2314aae}</SharePointProjectItemId>
+    </None>
     <None Include="SPI\SiteAssets\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1f1efd62-5e3e-42bc-b60c-1c21bf2dedb9}</SharePointProjectItemId>
     </None>
@@ -71,10 +77,16 @@
     <Folder Include="SPI\SiteAssets\img\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Features\SiteScriptLinks\SiteScriptLinks.Template.xml">
+      <DependentUpon>SiteScriptLinks.feature</DependentUpon>
+    </Content>
     <Content Include="Features\WebSiteAssets\WebSiteAssets.Template.xml">
       <DependentUpon>WebSiteAssets.feature</DependentUpon>
     </Content>
+    <Content Include="SPI\ScriptLinks\Elements.xml" />
     <Content Include="SPI\SiteAssets\Elements.xml" />
+    <Content Include="SPI\SiteAssets\js\angular.min.js" />
+    <Content Include="SPI\SiteAssets\js\jquery-1.11.2.min.js" />
     <Content Include="SPI\SiteAssets\js\main.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

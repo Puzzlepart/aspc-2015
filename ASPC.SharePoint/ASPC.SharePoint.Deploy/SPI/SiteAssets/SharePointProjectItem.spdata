@@ -3,5 +3,7 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="SiteAssets\" Type="ElementManifest" />
     <ProjectItemFile Source="js\main.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\angular.min.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\jquery-1.11.2.min.js" Target="SiteAssets\js\" Type="ElementFile" />
   </Files>
 </ProjectItem>

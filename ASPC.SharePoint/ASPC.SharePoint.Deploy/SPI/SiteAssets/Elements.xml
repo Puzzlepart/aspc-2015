@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="SiteAssets" Path="SiteAssets" Url="SiteAssets/Estatech">
+  <Module Name="SiteAssets" Path="SiteAssets" Url="SiteAssets">
     <File Path="js\main.js" Url="js/main.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
+    <File Path="js\angular.min.js" Url="js/angular.min.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="js\jquery-1.11.2.min.js" Url="js/jquery-1.11.2.min.js" />
   </Module>
 </Elements>
