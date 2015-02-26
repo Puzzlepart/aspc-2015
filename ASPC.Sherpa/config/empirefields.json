@@ -1,0 +1,56 @@
+[
+    {
+        "DisplayName": "Document Owner",
+        "InternalName": "EmpireDocumentOwner",
+        "ID": "c566451b-ee12-45e9-bbef-f2ff705776d2",
+        "Type": "User",
+        "ShowField": "NameWithPictureAndDetails"
+    },
+    {
+        "DisplayName": "Assignee",
+        "InternalName": "EmpireAssignee",
+        "ID": "c566451b-ee12-12e9-bbef-f2ff705336d2",
+        "Type": "User",
+        "ShowField": "NameWithPictureAndDetails"
+    },
+    {
+        "DisplayName": "Empire Technology",
+        "InternalName": "EmpireProduct",
+        "ID": "efb668c1-abe9-44e4-9b96-d24de93ed262",
+        "Type": "TaxonomyFieldTypeMulti",
+        "TermSetId": "8ba83719-9e4a-4e1d-a8e3-cd72710b460b"
+    },
+    {
+        "DisplayName": "Rebel Fraction",
+        "InternalName": "EmpireRebelFraction",
+        "ID": "aa78f423-1cec-4c6e-9424-d42791b3ba08",
+        "Type": "TaxonomyFieldType",
+        "TermSetId": "3866ade1-4116-4cae-a02a-f1a6420b2cc3"
+    },
+    {
+        "DisplayName": "Mission",
+        "InternalName": "EmpireMission",
+        "ID": "69f6ef2d-f3ec-4503-9b2e-c338924c27e0",
+        "Type": "TaxonomyFieldType",
+        "TermSetId": "28b7541b-2b60-4369-a078-7963ebb2bbd7"
+    },
+    {
+        "DisplayName": "Enemy of the empire",
+        "InternalName": "EmpireTarget",
+        "ID": "1ba02beb-58fe-41c4-bbcb-a3d18b9aa52a",
+        "Type": "TaxonomyFieldType",
+        "TermSetId": "c7628e48-d7f7-4997-83fb-994827b4b932"
+    },
+    {
+        "Choices": [
+            "Internal",
+            "Public",
+            "Confidential",
+            "Darth Vader"
+        ],
+        "DisplayName": "Information Security Class",
+        "InternalName": "EmpireInfoSecClass",
+        "ID": "260a2e9f-9147-4651-8bdc-6e5eaf049f80",
+        "Type": "Choice"
+    }
+]
