@@ -1,0 +1,132 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1344" measuredH="1078" mockupW="1012" mockupH="1061">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="332" y="17" w="1012" h="1061" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Galactic%20empire%20portal%0Ahttp%3A//root</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::DataGrid" x="502" y="445" w="218" h="168" measuredW="257" measuredH="201" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Total%20number%20of...%2C%20Count%2C%20Last%2014%20days%0APortal%20views%2C%2042%5C%2C123%2C%202316%0ADocuments%2C%201%5C%2C337%2C%2014%0AWanted%20enemies%2C%20168%2C%0ARebel%20locations%2C%2064%2C%0AWeapon%20models%2C%20323%2C%0AShip%20models%2C%2014</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::SubTitle" x="502" y="418" w="-1" h="-1" measuredW="279" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Galactic%20empire%20key%20stats</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::ColumnChart" x="832" y="745" w="211" h="166" measuredW="187" measuredH="175" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::PieChart" x="502" y="745" w="207" h="202" measuredW="180" measuredH="180" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::SubTitle" x="832" y="715" w="261" h="-1" measuredW="247" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Rebels%20killed%20over%20time</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::SubTitle" x="502" y="709" w="219" h="-1" measuredW="162" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Content%20Types</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Paragraph" x="848" y="458" w="245" h="178" measuredW="200" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Galactic%20empire%20how-to%0A%20%0ALight%20saber%20sabotage%20101%0A%20%0AHot%20to%20kill%20Han%20Solo%0A%20%0AShips%20are%20not%20what%20they%20used%20to%20be%0A%20%0AAfter%20the%20death%20star%20-%20way%20forward</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::SubTitle" x="821" y="422" w="-1" h="-1" measuredW="265" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Most%20viewed%20documents</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::RoundButton" x="821" y="453" w="23" h="24" measuredW="32" measuredH="32" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <icon>DocWordIcon%7Csmall</icon>
+        <shape>circle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::RoundButton" x="821" y="485" w="23" h="24" measuredW="32" measuredH="32" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <icon>DocWordIcon%7Csmall</icon>
+        <shape>circle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::RoundButton" x="821" y="517" w="23" h="24" measuredW="32" measuredH="32" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <icon>DocWordIcon%7Csmall</icon>
+        <shape>circle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::RoundButton" x="821" y="550" w="23" h="24" measuredW="32" measuredH="32" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <icon>DocWordIcon%7Csmall</icon>
+        <shape>circle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::RoundButton" x="821" y="582" w="23" h="24" measuredW="32" measuredH="32" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <icon>DocWordIcon%7Csmall</icon>
+        <shape>circle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Label" x="777" y="918" w="91" h="-1" measuredW="79" measuredH="30" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Older%20than%201%20year</text>
+        <textOrientation>slanted</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Label" x="821" y="918" w="101" h="-1" measuredW="85" measuredH="32" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>1%20year%20to%206%20months</text>
+        <textOrientation>slanted</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="864" y="917" w="101" h="-1" measuredW="93" measuredH="34" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>6%20months%20to%2030%20days</text>
+        <textOrientation>slanted</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Label" x="916" y="917" w="101" h="-1" measuredW="85" measuredH="32" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Less%20than%2030%20days</text>
+        <textOrientation>slanted</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Label" x="601" y="866" w="81" h="-1" measuredW="78" measuredH="26" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <size>18</size>
+        <text>Roadmap</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Label" x="524" y="825" w="62" h="-1" measuredW="57" measuredH="26" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <size>18</size>
+        <text>How-to</text>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Image" x="486" y="139" w="672" h="229" measuredW="796" measuredH="271" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <crop>0%2C0%2C1000%2C265</crop>
+        <filter>true</filter>
+        <src>../../../Pictures/ASPC/design_early.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
