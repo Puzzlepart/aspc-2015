@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SiteAssets" Path="SiteAssets" Url="SiteAssets/Estatech">
+    <File Path="js\main.js" Url="js/main.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
+  </Module>
+</Elements>

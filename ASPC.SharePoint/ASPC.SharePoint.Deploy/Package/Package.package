@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8dd757e4-a15d-43be-8a9f-6c6509fa6c73" solutionId="8dd757e4-a15d-43be-8a9f-6c6509fa6c73" resetWebServer="false" sharePointProductVersion="15.0" name="ASPC.Appsters" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="891069d6-85ad-4696-91f1-e40997a37ecd" />
+  </features>
+</package>
