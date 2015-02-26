@@ -1,0 +1,113 @@
+[
+    {
+        "DisplayName": "Empire Document",
+        "InternalName": "EmpireBaseDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D",
+        "Group": "Empire Document Content Types",
+        "Fields": [
+            "EmpireDocumentOwner",
+            "EmpireProduct",
+            "EmpireInfoSecClass",
+            "TaxKeyword"
+        ]
+    },
+    {
+        "DisplayName": "Intelligence Document",
+        "Fields": [
+            "EmpireRebelFraction",
+            "EmpireTarget"
+        ],
+        "InternalName": "EmpireIntelligenceDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D01",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Mission Information",
+        "Fields": [
+            "EmpireRebelFraction",
+            "EmpireTarget",
+            "EmpireMission"
+        ],
+        "InternalName": "EmpireMissionDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D02",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Propaganda Poster",
+        "InternalName": "EmpirePropagandaDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D03",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Technology Document",
+        "InternalName": "EmpireTechDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D04",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Droid Sketch",
+        "InternalName": "EmpireDroidDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D0401",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Starship Sketch",
+        "InternalName": "EmpireStarshipDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D0402",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Weapon Sketch",
+        "InternalName": "EmpireWeaponDoc",
+        "ID": "0x010100A2A873776EA34B66856ECFDA5D1CAD6D0403",
+        "Group": "Empire Document Content Types"
+    },
+    {
+        "DisplayName": "Empire Item",
+        "Fields": [
+            "TaxKeyword"
+        ],
+        "InternalName": "EmpireItem",
+        "ID": "0x010079ED6C6B6F2A4E6EBFCAF30BE0E1B2D7",
+        "Group": "Empire Item Content Types"
+    },
+    {
+        "DisplayName": "Wanted enemy",
+        "Fields": [
+            "EmpireRebelFraction",
+            "EmpireTarget",
+            "EmpireMission",
+            "EmpireAssignee"
+        ],
+        "InternalName": "EmpireWanted",
+        "ID": "0x010079ED6C6B6F2A4E6EBFCAF30BE0E1B2D701",
+        "Group": "Empire Item Content Types"
+    },
+    {
+        "DisplayName": "Empire Technology item",
+        "Fields": [
+            "EmpireProduct"
+        ],
+        "InternalName": "EmpireTechItem",
+        "ID": "0x010079ED6C6B6F2A4E6EBFCAF30BE0E1B2D702",
+        "Group": "Empire Item Content Types"
+    },
+    {
+        "DisplayName": "Starship",
+        "InternalName": "EmpireTechStarshipItem",
+        "ID": "0x010079ED6C6B6F2A4E6EBFCAF30BE0E1B2D70201",
+        "Group": "Empire Item Content Types"
+    },
+    {
+        "DisplayName": "Weapon",
+        "InternalName": "EmpireTechWeaponItem",
+        "ID": "0x010079ED6C6B6F2A4E6EBFCAF30BE0E1B2D70202",
+        "Group": "Empire Item Content Types"
+    },
+    {
+        "DisplayName": "Droid",
+        "InternalName": "EmpireTechDroidItem",
+        "ID": "0x010079ED6C6B6F2A4E6EBFCAF30BE0E1B2D70203",
+        "Group": "Empire Item Content Types"
+    }
+]
