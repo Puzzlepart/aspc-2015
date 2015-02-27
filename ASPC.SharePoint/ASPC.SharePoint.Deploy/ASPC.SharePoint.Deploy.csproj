@@ -80,7 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SPI\SiteAssets\html\" />
-    <Folder Include="SPI\SiteAssets\img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Features\WebSitePages\WebSitePages.Template.xml">
@@ -95,6 +94,15 @@
     <Content Include="SPI\ScriptLinks\Elements.xml" />
     <Content Include="SPI\SiteAssets\css\appsters15.css" />
     <Content Include="SPI\SiteAssets\Elements.xml" />
+    <Content Include="SPI\SiteAssets\img\c-3po.png" />
+    <Content Include="SPI\SiteAssets\img\galacticempireIcon.png" />
+    <Content Include="SPI\SiteAssets\img\GalacticEmpireLogo.png" />
+    <Content Include="SPI\SiteAssets\img\hansolo.png" />
+    <Content Include="SPI\SiteAssets\img\headerbg.png" />
+    <Content Include="SPI\SiteAssets\img\lukeskywalker.png" />
+    <Content Include="SPI\SiteAssets\img\obiwan.png" />
+    <Content Include="SPI\SiteAssets\img\princesleia.png" />
+    <Content Include="SPI\SiteAssets\img\yoda.png" />
     <Content Include="SPI\SiteAssets\js\angular.min.js" />
     <Content Include="SPI\SiteAssets\js\appsters.generics.js" />
     <Content Include="SPI\SiteAssets\js\appsters.enemies.js" />
