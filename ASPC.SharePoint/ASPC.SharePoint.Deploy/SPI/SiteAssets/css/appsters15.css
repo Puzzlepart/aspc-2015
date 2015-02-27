@@ -2,9 +2,10 @@
 body { padding:0; margin:0;     font-family: 'Segoe UI';
     color: #444;
 } 
+.content-wrapper > h1 { display:none; }
 h1 { text-align:center; border:solid 1px #000000; padding:0 0px 2px 10px; display:inline-block; text-transform:uppercase; margin-bottom:40px; }
 h1 span { text-transform:uppercase; }
-
+#s4-bodyContainer { padding-bottom:0; }
 .galactic-header { 
 width: 100%;
 display: flex;
@@ -58,19 +59,18 @@ height:450px;
 .target-image,
 .target-content { float:left; }
 
-.target-image img { width:180px; height:180px }
-.target-image { width:180px }
+.target-image img { height:180px }
+.target-image {  }
 .target-content { width:300px; margin-left:20px; }
+.appsters.enemies .character:nth-child(10){
+   display:none;
+}
+.appsters.enemies .character { position:relative; }
+.appsters.enemies .character:hover {
+    background:grey;
+	color:white;
+}
 
-.appsters.enemies {
-    
-}
-.appsters.enemies .character {
-	float: left;
-	width: 400px;
-	height: 200px;
-	overflow: hidden;
-}
 .appsters.enemies .character .image {
     float: left;
 }
@@ -78,26 +78,38 @@ height:450px;
 	float: left;
 	margin-left: 20px;
 }
-.appsters.enemies .character .keyData span {
-	float: left;
+.appsters.enemies .character .keyData  {
+ margin-bottom:20px;
 }
 .appsters.enemies .character .name {
-    font-size: 24px;
+    font-size: 30px;
+	color:#9f0205;
 }
 .appsters.enemies .character img {
     width: 150px;
     overflow: hidden;
 }
-
+.keyData span { display:block; }
+.actions { position:absolute; bottom:10px; }
+.actions #AddWanted { border:solid 1px #333333; padding:2px 10px; cursor:pointer; display:inline; }
+.actions #AddWanted:hover { background: #9f0205; color:white;}
 .appsters.enemies .paging {
-    float: left;
+    clear:both;
+	margin-bottom:50px;
 
 }
+
 .appsters.enemies .paging > div {
+	width:100px;
+	float:left;
     font-size: 18px;
     padding: 5px;
     border: 1px solid #333;
+	cursor: pointer;
+	margin-right:20px;
 }
+.appsters.enemies .paging > div:hover {background: #9f0205; color:white;  }
+
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
