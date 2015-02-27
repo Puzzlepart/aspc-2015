@@ -1,0 +1,21 @@
+{
+    "FieldConfigurations": [
+        "empirefields.json"
+    ],
+    "ContentTypeConfigurations": [
+        "empirecontenttypes.json"
+    ],
+    "TaxonomyConfigurations": ["empiretaxonomy.json"],
+    "SandboxedSolutions": ["ASPC.Appsters.wsp"],
+     "RootWeb": {
+         "Lists": [],
+ 		"Properties"  : {},
+ 		"Quicklaunch"  : {},
+ 		"Template"     : "",
+ 		"Url"          : "/",
+		"WebFeatures"  : [{"FeatureId" :"9b158a07-7bab-446e-b19a-0e53b89570af", "FeatureName": "ASPC.SharePoint.Deploy SitePages" , "ReactivateAlways": "true"}, 
+                          {"FeatureId": "2cdf2445-3b1a-492b-8f60-11f945455ccb", "FeatureName": "ASPC.SharePoint.Deploy SiteAssets" , "ReactivateAlways": "true"}],
+ 		 "CustomTaskTypes" :  [],
+		"Webs"         : []
+   }
+}

@@ -1,0 +1,40 @@
+﻿{
+  "Id": "6ace0284-af94-44b4-9865-6029b3efc4fb",
+  "Title": "Empire",
+  "TermSets": [
+    {
+      "Id": "c7628e48-d7f7-4997-83fb-994827b4b932",
+      "Title": "Enemies of the empire"
+    },
+    {
+      "Id": "28b7541b-2b60-4369-a078-7963ebb2bbd7",
+      "Title": "Missions"
+    },
+    {
+      "Id": "3866ade1-4116-4cae-a02a-f1a6420b2cc3",
+      "Title": "Rebel Fractions"
+    },
+    {
+      "Id": "8ba83719-9e4a-4e1d-a8e3-cd72710b460b",
+      "Title": "Technology",
+      "Terms": [
+        {
+          "Id": "d01f8f2a-a632-4060-bd3f-c37ef1636a9d",
+          "Title": "Droids"
+        },
+        {
+          "Id": "ae7a3d38-0832-4c53-b986-a166ed92c666",
+          "Title": "Stars"
+        },
+        {
+          "Id": "17c72e1a-fe92-4b51-84a2-94c0c1a5ae6c",
+          "Title": "Starships"
+        },
+        {
+          "Id": "6aefee06-4924-476d-afab-74de86d5bd5e",
+          "Title": "Weapons"
+        }
+      ]
+    }
+  ]
+}

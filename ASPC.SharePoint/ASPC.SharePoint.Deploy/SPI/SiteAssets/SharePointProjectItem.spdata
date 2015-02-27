@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SiteAssets\" Type="ElementManifest" />
+    <ProjectItemFile Source="js\main.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\angular.min.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\jquery-1.11.2.min.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\appsters.stats.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="css\appsters15.css" Target="SiteAssets\css\" Type="ElementFile" />
+    <ProjectItemFile Source="js\appsters.generics.js" Target="SiteAssets\js\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

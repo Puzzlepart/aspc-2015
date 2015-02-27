@@ -7,6 +7,7 @@
 *.sln.docstates
 
 # Build results
+<<<<<<< HEAD
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -18,10 +19,22 @@ bld/
 
 # Roslyn cache directories
 *.ide/
+=======
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
+!packages/*/build/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+
 
 #NUNIT
 *.VisualState.xml
@@ -35,6 +48,8 @@ dlldata.c
 *_i.c
 *_p.c
 *_i.h
+*_i.c
+*_p.c
 *.ilk
 *.meta
 *.obj
@@ -54,11 +69,17 @@ dlldata.c
 *.vssscc
 .builds
 *.pidb
+
 *.svclog
 *.scc
 
 # Chutzpah Test files
 _Chutzpah*
+
+
+*.log
+*.scc
+
 
 # Visual C++ cache files
 ipch/
@@ -73,6 +94,7 @@ ipch/
 *.vsp
 *.vspx
 
+<<<<<<< HEAD
 # TFS 2012 Local Workspace
 $tf/
 
@@ -103,6 +125,9 @@ AutoTest.Net/
 
 # Web workbench (sass)
 .sass-cache/
+
+*.ncrunch*
+.*crunch*.local.xml
 
 # Installshield output folder
 [Ee]xpress/
@@ -142,6 +167,14 @@ packages/*
 
 # Windows Azure Build Output
 csx/
+*.Publish.xml
+
+# NuGet Packages Directory
+## TODO: If you have NuGet Package Restore enabled, uncomment the next line
+#packages/
+
+# Windows Azure Build Output
+csx
 *.build.csdef
 
 # Windows Store app package directory
@@ -159,19 +192,29 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
+=======
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
 
 # RIA/Silverlight projects
 Generated_Code/
 
+<<<<<<< HEAD
 # Backup & report files from converting an old project file
 # to a newer Visual Studio version. Backup files are not needed,
 # because we have git ;-)
+=======
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
+>>>>>>> 9b5e544bf7ba7b0ddf7c6134d9ccfbe73e783deb
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
+<<<<<<< HEAD
 *.mdf
 *.ldf
 
@@ -187,3 +230,31 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+=======
+App_Data/*.mdf
+App_Data/*.ldf
+
+
+#LightSwitch generated files
+GeneratedArtifacts/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store
+*.wsp
+>>>>>>> 9b5e544bf7ba7b0ddf7c6134d9ccfbe73e783deb
