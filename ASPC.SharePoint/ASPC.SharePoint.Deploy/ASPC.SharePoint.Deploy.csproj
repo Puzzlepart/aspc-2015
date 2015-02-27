@@ -68,6 +68,10 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SPI\Masterpage\GalacticEmpire.master" />
+    <None Include="SPI\Masterpage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73a57620-b286-41e6-8fd6-10d3a6b04383}</SharePointProjectItemId>
+    </None>
     <None Include="SPI\ScriptLinks\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2ef8ac82-3028-470c-a954-f075f2314aae}</SharePointProjectItemId>
     </None>
@@ -80,7 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SPI\SiteAssets\html\" />
-    <Folder Include="SPI\SiteAssets\img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Features\WebSitePages\WebSitePages.Template.xml">
@@ -92,14 +95,26 @@
     <Content Include="Features\WebSiteAssets\WebSiteAssets.Template.xml">
       <DependentUpon>WebSiteAssets.feature</DependentUpon>
     </Content>
+    <Content Include="SPI\Masterpage\Elements.xml" />
     <Content Include="SPI\ScriptLinks\Elements.xml" />
     <Content Include="SPI\SiteAssets\css\appsters15.css" />
     <Content Include="SPI\SiteAssets\Elements.xml" />
+    <Content Include="SPI\SiteAssets\img\c-3po.png" />
+    <Content Include="SPI\SiteAssets\img\galacticempireIcon.png" />
+    <Content Include="SPI\SiteAssets\img\GalacticEmpireLogo.png" />
+    <Content Include="SPI\SiteAssets\img\hansolo.png" />
+    <Content Include="SPI\SiteAssets\img\headerbg.png" />
+    <Content Include="SPI\SiteAssets\img\lukeskywalker.png" />
+    <Content Include="SPI\SiteAssets\img\obiwan.png" />
+    <Content Include="SPI\SiteAssets\img\princesleia.png" />
+    <Content Include="SPI\SiteAssets\img\yoda.png" />
     <Content Include="SPI\SiteAssets\js\angular.min.js" />
     <Content Include="SPI\SiteAssets\js\appsters.generics.js" />
+    <Content Include="SPI\SiteAssets\js\appsters.enemies.js" />
     <Content Include="SPI\SiteAssets\js\jquery-1.11.2.min.js" />
     <Content Include="SPI\SiteAssets\js\main.js" />
     <Content Include="SPI\SiteAssets\js\appsters.stats.js" />
+    <Content Include="SPI\SitePages\Enemies.aspx" />
     <Content Include="SPI\SitePages\Elements.xml" />
     <Content Include="SPI\SitePages\Dashboard.aspx" />
   </ItemGroup>
