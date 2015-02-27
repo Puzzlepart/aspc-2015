@@ -105,3 +105,11 @@ var sort_by = function (field, reverse, primer) {
         return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
     }
 };
+
+function HandleError(data, status, headers, config) {
+    console.log("Error: " + data + " " + status);
+};
+
+function isNumber(obj) {
+    return !isNaN(parseFloat(obj));
+};

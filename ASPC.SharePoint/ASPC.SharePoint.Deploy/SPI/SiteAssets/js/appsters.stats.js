@@ -58,14 +58,6 @@ Appsters.Stats.DrawContentTypeDistributionChart = function (data) {
     }
 };
 
-function HandleError(data, status, headers, config) {
-    console.log("Error: " + data + " " + status);
-};
-
-function isNumber(obj) {
-     return !isNaN(parseFloat(obj));
-};
-
 Appsters.Stats.TransformSearchResultToAngularReadableFormat = function (data) {
     var pages = [];
     //We need to transform data from the search results index-array format to property-format

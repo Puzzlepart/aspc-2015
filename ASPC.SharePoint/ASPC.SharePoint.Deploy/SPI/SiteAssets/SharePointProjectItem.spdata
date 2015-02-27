@@ -8,5 +8,6 @@
     <ProjectItemFile Source="js\appsters.stats.js" Target="SiteAssets\js\" Type="ElementFile" />
     <ProjectItemFile Source="css\appsters15.css" Target="SiteAssets\css\" Type="ElementFile" />
     <ProjectItemFile Source="js\appsters.generics.js" Target="SiteAssets\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\appsters.enemies.js" Target="SiteAssets\js\" Type="ElementFile" />
   </Files>
 </ProjectItem>

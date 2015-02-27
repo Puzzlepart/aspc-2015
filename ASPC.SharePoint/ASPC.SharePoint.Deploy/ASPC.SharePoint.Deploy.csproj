@@ -97,9 +97,11 @@
     <Content Include="SPI\SiteAssets\Elements.xml" />
     <Content Include="SPI\SiteAssets\js\angular.min.js" />
     <Content Include="SPI\SiteAssets\js\appsters.generics.js" />
+    <Content Include="SPI\SiteAssets\js\appsters.enemies.js" />
     <Content Include="SPI\SiteAssets\js\jquery-1.11.2.min.js" />
     <Content Include="SPI\SiteAssets\js\main.js" />
     <Content Include="SPI\SiteAssets\js\appsters.stats.js" />
+    <Content Include="SPI\SitePages\Enemies.aspx" />
     <Content Include="SPI\SitePages\Elements.xml" />
     <Content Include="SPI\SitePages\Dashboard.aspx" />
   </ItemGroup>
