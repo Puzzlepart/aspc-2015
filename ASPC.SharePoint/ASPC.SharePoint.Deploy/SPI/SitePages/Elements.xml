@@ -2,6 +2,5 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="SitePages" Path="SitePages" Url="SitePages">
     <File Path="Dashboard.aspx" Url="Dashboard.aspx" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
-    <File Path="Enemies.aspx" Url="Enemies.aspx" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
   </Module>
 </Elements> 
