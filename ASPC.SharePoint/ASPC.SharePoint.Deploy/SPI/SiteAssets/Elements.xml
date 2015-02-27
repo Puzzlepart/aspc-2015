@@ -7,5 +7,15 @@
     <File Path="js\appsters.stats.js" Url="js/appsters.stats.js"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
     <File Path="css\appsters15.css" Url="css/appsters15.css" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
     <File Path="js\appsters.generics.js" Url="js/appsters.generics.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="js\appsters.enemies.js" Url="js/appsters.enemies.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
+    <File Path="img\c-3po.png" Url="img/c-3po.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
+    <File Path="img\galacticempireIcon.png" Url="img/galacticempireIcon.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
+    <File Path="img\GalacticEmpireLogo.png" Url="img/GalacticEmpireLogo.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\hansolo.png" Url="img/hansolo.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\headerbg.png" Url="img/headerbg.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\lukeskywalker.png" Url="img/lukeskywalker.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\obiwan.png" Url="img/obiwan.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\princesleia.png" Url="img/princesleia.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\yoda.png" Url="img/yoda.png" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"  />
   </Module>
 </Elements>
