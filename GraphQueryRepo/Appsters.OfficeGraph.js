@@ -139,7 +139,7 @@ Appsters.Graph = (function ($) {
 
 // usage example
 //	Appsters.Graph.getAllActors().done(function(){
-//		Appsters.Graph.getMostModified(function(data){
-//			console.log(data);
+//		Appsters.Graph.getMostModified(function(groupIt, mostModified){
+//			console.log(groupIt, mostModified);
 //		});
 //	});
