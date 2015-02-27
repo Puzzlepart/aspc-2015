@@ -81,9 +81,6 @@
     <None Include="SPI\SiteAssets\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1f1efd62-5e3e-42bc-b60c-1c21bf2dedb9}</SharePointProjectItemId>
     </None>
-    <None Include="SPI\SitePages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{3c9428c0-ebea-48ae-a18c-0e3e1aa2969a}</SharePointProjectItemId>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SPI\SiteAssets\html\" />
@@ -100,6 +97,7 @@
     </Content>
     <Content Include="SPI\Masterpages\Elements.xml" />
     <Content Include="SPI\PageLayouts\Elements.xml" />
+    <Content Include="SPI\PageLayouts\Dashboard.aspx" />
     <Content Include="SPI\PageLayouts\Enemies.aspx" />
     <Content Include="SPI\ScriptLinks\Elements.xml" />
     <Content Include="SPI\SiteAssets\css\appsters15.css" />
@@ -119,9 +117,6 @@
     <Content Include="SPI\SiteAssets\js\jquery-1.11.2.min.js" />
     <Content Include="SPI\SiteAssets\js\main.js" />
     <Content Include="SPI\SiteAssets\js\appsters.stats.js" />
-    <Content Include="SPI\SitePages\Enemies.aspx" />
-    <Content Include="SPI\SitePages\Elements.xml" />
-    <Content Include="SPI\SitePages\Dashboard.aspx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
