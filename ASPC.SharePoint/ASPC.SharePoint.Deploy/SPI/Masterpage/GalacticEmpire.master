@@ -119,55 +119,12 @@
 								</div>
 							</h1>
 	<div class="main-content-wrapper">
-	<div class="target">
-		<div class="target-image">
-			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
-		</div>
-		<div class="target-content">
-			<h2>Luke Skywalker</h2>
-			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
-			<p class="target-location">Last Known Location: Rebel HQ</p>
-			<p class="target-reward">REWARD: 10,0000</p>
-		</div>
-	</div>
 
-	<div class="target">
-		<div class="target-image">
-			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
-		</div>
-		<div class="target-content">
-			<h2>Luke Skywalker</h2>
-			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
-			<p class="target-location">Last Known Location: Rebel HQ</p>
-			<p class="target-reward">REWARD: 10,0000</p>
-		</div>
-	</div>
-	<div class="target">
-		<div class="target-image">
-			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
-		</div>
-		<div class="target-content">
-			<h2>Luke Skywalker</h2>
-			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
-			<p class="target-location">Last Known Location: Rebel HQ</p>
-			<p class="target-reward">REWARD: 10,0000</p>
-		</div>
-	</div>
-	<div class="target">
-		<div class="target-image">
-			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
-		</div>
-		<div class="target-content">
-			<h2>Luke Skywalker</h2>
-			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
-			<p class="target-location">Last Known Location: Rebel HQ</p>
-			<p class="target-reward">REWARD: 10,0000</p>
-		</div>
-	</div>
-	</div>
-	<div class="layoutpage-content">
-	<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
-	</div>
+
+	    <div class="layoutpage-content">
+	    <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+	    </div>
+    </div>
 </div>
 </div>
 				<!-- ===== STARTER: style.css adds width and margin =========================================================================================== -->
