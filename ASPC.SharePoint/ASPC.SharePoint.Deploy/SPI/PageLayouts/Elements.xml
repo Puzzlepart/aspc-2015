@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="masterpage" Url="_catalogs/masterpage" RootWebOnly="TRUE">
+    <File Path="PageLayouts\Enemies.aspx" Url="Enemies.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE">
+      <Property Name="Title" Value="Browse people of the empire" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/WelcomeTOC.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/WelcomeTOC.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_articlepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D;#" />
+    </File>
+  </Module>
+</Elements>

@@ -68,9 +68,12 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="SPI\Masterpage\GalacticEmpire.master" />
-    <None Include="SPI\Masterpage\SharePointProjectItem.spdata">
+    <None Include="SPI\Masterpages\GalacticEmpire.master" />
+    <None Include="SPI\Masterpages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{73a57620-b286-41e6-8fd6-10d3a6b04383}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\PageLayouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6e44d53-ca98-4ba0-aa31-86c606086e13}</SharePointProjectItemId>
     </None>
     <None Include="SPI\ScriptLinks\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2ef8ac82-3028-470c-a954-f075f2314aae}</SharePointProjectItemId>
@@ -95,7 +98,9 @@
     <Content Include="Features\WebSiteAssets\WebSiteAssets.Template.xml">
       <DependentUpon>WebSiteAssets.feature</DependentUpon>
     </Content>
-    <Content Include="SPI\Masterpage\Elements.xml" />
+    <Content Include="SPI\Masterpages\Elements.xml" />
+    <Content Include="SPI\PageLayouts\Elements.xml" />
+    <Content Include="SPI\PageLayouts\Enemies.aspx" />
     <Content Include="SPI\ScriptLinks\Elements.xml" />
     <Content Include="SPI\SiteAssets\css\appsters15.css" />
     <Content Include="SPI\SiteAssets\Elements.xml" />
