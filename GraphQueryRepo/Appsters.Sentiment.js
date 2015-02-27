@@ -16,7 +16,13 @@ Appsters.Sentiment = (function ($) {
 
             var html = "<b>Page Language:</b> " + lang + "<br><br><div style='color:" + color + "'>" + sentiment + "</div>";
             SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function () {
-                SP.UI.Notify.addNotification(html, false);
+                var div = $("<div />");
+                div.attr("style", 'display:none;border:solid 1px #444;width:250px;position:absolute;top:100px;left:100px;background-color:#fff;padding:10px 10px 10px 10px')
+                div.html(html);
+
+                $("body").append(div);
+                div.fadeIn(500).delay(5000).fadeOut(500).remove();
+                //SP.UI.Notify.addNotification(html, false);
             });
         })
         .done(function () {
