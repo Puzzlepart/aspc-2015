@@ -51,16 +51,12 @@ Appsters.Graph = (function ($) {
                     }
                 });
 
-                callbackModified(groupIt);
+                callbackModified(groupIt, mostModified);
             },
             error: function (err) {
                 showMessage('<div id="private" class="message">Error calling Office Graph for actors...refresh your browser and try again (<span class="hyperlink" onclick="javascript:$(this).parent().remove();">dismiss</span>).</div>');
             }
         });
-    },
-
-    getMostViewed = function (from, to) {
-
     },
 
     getAllActors = function (callbackLoadActors) {
