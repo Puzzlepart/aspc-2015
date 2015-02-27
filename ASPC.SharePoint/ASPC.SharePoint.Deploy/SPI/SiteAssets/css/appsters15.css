@@ -61,3 +61,26 @@ height:450px;
 .target-image img { width:180px; height:180px }
 .target-image { width:180px }
 .target-content { width:300px; margin-left:20px; }
+
+.appsters.enemies {
+    
+}
+.appsters.enemies .character {
+	float: left;
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+}
+.appsters.enemies .character .image {
+    float: left;
+}
+.appsters.enemies .character .nameAndInfo {
+	float: left;
+}
+.appsters.enemies .character .name {
+    font-size: 24px;
+}
+.appsters.enemies .character img {
+    width: 150px;
+    overflow: hidden;
+}
