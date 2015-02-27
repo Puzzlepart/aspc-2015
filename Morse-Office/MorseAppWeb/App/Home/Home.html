@@ -26,15 +26,15 @@
     <script type="text/javascript">
         $(document).ready(function () {
             //setup signalR hub
-            
+
             $.connection.hub.logging = true;
             var hub = $.connection.morseHub;
- 
+
             hub.client.sendMessage = function (message) {
                 $("#buffer").text($("#buffer").text() + message);
             };
 
-          
+
             $.connection.hub.start().done(function () {
                 hub.server.initialize();
             });
@@ -44,14 +44,15 @@
     </script>
 </head>
 <body>
-    <div id="content-header">
+    <div id="content-header" style="background-color: black;color:white">
+        <img src="../../Images/logo.png"/>
         <div class="padding">
             <h1 id="header">Button Re-entry</h1>
         </div>
     </div>
     <div id="content-main">
         <div class="padding">
-            <div id="buffer"></div>
+            <div id="buffer" style="font-size:2em"></div>
             <p>
                 <button id="get-data-from-selection" onclick=" Appsters.Button.putTextInDocument() ">GET IT!</button>
             </p>
