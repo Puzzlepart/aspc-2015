@@ -63,12 +63,19 @@ Appsters.Enemies.AddWantedItem = function (event) {
     jQuery(event.target).hide();
 
     var characterObject = jQuery(event.target).parents('.character');
+    characterObject.addClass('wantedClicked');
 
     var clientContext = SP.ClientContext.get_current();
     var oList = clientContext.get_web().get_lists().getByTitle("Wanted");
     var itemCreateInfo = new SP.ListItemCreationInformation();
     var listItem = oList.addItem(itemCreateInfo);
     listItem.set_item("Title", characterObject.find('.name').text());
+    var imageUrl = characterObject.find('img').attr('src');
+    var urlValue = new SP.FieldUrlValue();
+    urlValue.set_url(imageUrl);
+    urlValue.set_description("Associated picture");
+    listItem.set_item("ImageUrl", urlValue);
+
     listItem.update();
     clientContext.load(listItem);
 
