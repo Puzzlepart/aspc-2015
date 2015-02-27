@@ -88,3 +88,12 @@ height:450px;
     width: 150px;
     overflow: hidden;
 }
+.appsters.enemies .paging {
+    float: left;
+
+}
+.appsters.enemies .paging > div {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #333;
+}
