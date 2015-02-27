@@ -49,7 +49,7 @@
 		<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server" />
 
 		<!-- ===== STARTER: Custom CSS  =================================================================================================== -->
-		<SharePoint:CssRegistration ID="CssRegistration1" name="&lt;% $SPUrl:~sitecollection/Site Assets/css/appsters15.css %&gt;" runat="server" after="SharepointCssFile" />	
+		<SharePoint:CssRegistration ID="CssRegistration1" name="&lt;% $SPUrl:~sitecollection/SiteAssets/css/appsters15.css %&gt;" runat="server" after="SharepointCssFile" />	
 	</head>
 	
 	<body>
@@ -87,8 +87,8 @@
 <div class="galactic-header">
 	<div class="header-image"></div>
 	<div class="header-content">
-	 <img src="/sites/GalacticEmpire/Site Assets/img/GalacticEmpireLogo.png" class="galactic-logo"/>
-	 <img src="/sites/GalacticEmpire/Site Assets/img/galacticempireicon.png" class="galactic-icon"/>
+	 <img src="/sites/GalacticEmpire/SiteAssets/img/GalacticEmpireLogo.png" class="galactic-logo"/>
+	 <img src="/sites/GalacticEmpire/SiteAssets/img/galacticempireicon.png" class="galactic-icon"/>
 	</div>
 </div>
 </div>
