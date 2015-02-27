@@ -33,23 +33,28 @@
 <asp:content id="Content4" contentplaceholderid="PlaceHolderBodyAreaClass" runat="server">
 </asp:content>
 <asp:content contentplaceholderid="PlaceHolderMain" runat="server">
+    <h1>Browse people of the empire</h1>
     <div class="appsters enemies" ng-app="StatisticsAngularApp">
         <div ng-controller="enemiesListCtrl">
-            <div class="character" ng-repeat="character in people">  
-                <div class="image"><img src="{{character.imageUrl}}"/></div>
-                <div class="nameAndInfo">
-                    <div class="name">{{character.name}}</div>
+            <div class="character target" ng-repeat="character in people">  
+                <div class="target-image">
+                    <img src="{{character.imageUrl}}"/>
+                </div>
+                <div class="nameAndInfo target-content">
+                    <h2 class="name">{{character.name}}</h2>
                     <div class="keyData">
                         <span>Birth year: {{character.birth_year}}</span>
                         <span>Gender: {{character.gender}}</span>
                     </div>
                     <div class="actions">
-                        <button id="AddWanted">Add as Wanted</button>
+                        <div id="AddWanted">Add as Wanted</div>
                     </div>
                 </div>
             </div> 
-            <button id="previous">Previous</button>
-            <button id="next">Next</button>
+            <div class="paging">
+                <div id="previous">Previous</div>
+                <div id="next">Next</div>
+            </div>
         </div>
     </div>
     <script type="text/javascript">

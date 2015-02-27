@@ -147,4 +147,3 @@ Appsters.Graph = (function ($) {
 //			console.log(data);
 //		});
 //	});
-
