@@ -3,7 +3,7 @@ var Appsters = Appsters || {}
 Appsters.Graph = (function ($) {
     var actors = [],
 
-    getMostModified = function (from, to, callbackModified) {
+    getMostModified = function (callbackModified, from, to) {
         var parts = [];
         //OR(ACTOR(1234, action:1003), ACTOR(5678, action:1003))
         for (var i = 0; i < actors.length; i++) {
