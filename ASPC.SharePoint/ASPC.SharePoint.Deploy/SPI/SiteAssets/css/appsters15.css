@@ -99,10 +99,9 @@ height:450px;
     border: 1px solid #333;
 	cursor: pointer;
 	margin-right:20px;
-	
 }
+.appsters.enemies .paging > div:hover {background: #9f0205; color:white;  }
 
-.appsters.enemies .paging > div:hover { background: #9f0205; color:white; }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
