@@ -6,10 +6,10 @@ Appsters.Enemies.InitPage = function () {
     var statisticsAngularApp = angular.module('StatisticsAngularApp', []);
 
     jQuery('body').delegate('#next', 'click', function () {
-        Appsters.Enemies.BindEnemiesController(statisticsAngularApp);
+        window.location.reload();
     });
     jQuery('body').delegate('#previous', 'click', function () {
-        Appsters.Enemies.BindEnemiesController(statisticsAngularApp);
+        window.location.reload();
     });
     jQuery('body').delegate('#AddWanted', 'click', function () {
         Appsters.Enemies.AddWantedItem(event);
@@ -59,13 +59,27 @@ Appsters.Enemies.GetImageForCharacters = function (characters, $scope, $http) {
 Appsters.Enemies.AddWantedItem = function (event) {
     var deferred = jQuery.Deferred();
 
+    jQuery(event.target).after('<span class="added">Added to the wanted list</span>');
+    jQuery(event.target).hide();
+
     var characterObject = jQuery(event.target).parents('.character');
+    characterObject.fadeOut(2000, 'swing', function () {
+        characterObject.addClass('wantedClicked');
+    });
 
     var clientContext = SP.ClientContext.get_current();
     var oList = clientContext.get_web().get_lists().getByTitle("Wanted");
     var itemCreateInfo = new SP.ListItemCreationInformation();
     var listItem = oList.addItem(itemCreateInfo);
+    var imageUrl = characterObject.find('img').attr('src');
+
     listItem.set_item("Title", characterObject.find('.name').text());
+    listItem.set_item("ImageUrlRaw", imageUrl);
+    var urlValue = new SP.FieldUrlValue();
+    urlValue.set_url(imageUrl);
+    urlValue.set_description("Associated picture");
+    listItem.set_item("ImageUrl", urlValue);
+
     listItem.update();
     clientContext.load(listItem);
 

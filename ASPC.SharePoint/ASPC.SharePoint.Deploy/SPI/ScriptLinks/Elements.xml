@@ -6,6 +6,11 @@
     Sequence="10">
   </CustomAction>
   <CustomAction
+    ScriptSrc="~SiteCollection/SiteAssets/js/Appsters.Sentiment.js"
+    Location="ScriptLink"
+    Sequence="11">
+  </CustomAction>
+  <CustomAction
 ScriptSrc="~SiteCollection/SiteAssets/js/main.js"
 Location="ScriptLink"
 Sequence="30">
