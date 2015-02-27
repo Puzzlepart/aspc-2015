@@ -41,7 +41,7 @@ namespace ASPC.TakeDown
                     client.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
                     client.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
                     //http://aker-dev-tarjei.cloudapp.net/_api/search/query?querytext='*'
-                    var endpointUri = new Uri(webUri, "/_api/search/query?querytext='*'&refinementfilters='count(test%2cfrom%3d2)'");
+                    var endpointUri = new Uri(webUri, "/_api/search/query?querytext='*'&refinementfilters='lala(test%2cfrom%3d2)'");
                     var result = client.DownloadString(endpointUri);
                     var t = JToken.Parse(result);
                     return t["d"];

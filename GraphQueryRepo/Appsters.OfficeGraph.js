@@ -3,7 +3,7 @@ var Appsters = Appsters || {}
 Appsters.Graph = (function ($) {
     var actors = [],
 
-    getMostModified = function (from, to, callbackModified) {
+    getMostModified = function (callbackModified, from, to) {
         var parts = [];
         //OR(ACTOR(1234, action:1003), ACTOR(5678, action:1003))
         for (var i = 0; i < actors.length; i++) {
@@ -51,7 +51,7 @@ Appsters.Graph = (function ($) {
                     }
                 });
 
-                callbackModified(groupIt);
+                callbackModified(groupIt, mostModified);
             },
             error: function (err) {
                 showMessage('<div id="private" class="message">Error calling Office Graph for actors...refresh your browser and try again (<span class="hyperlink" onclick="javascript:$(this).parent().remove();">dismiss</span>).</div>');
@@ -59,12 +59,9 @@ Appsters.Graph = (function ($) {
         });
     },
 
-    getMostViewed = function (from, to) {
-
-    },
-
     getAllActors = function (callbackLoadActors) {
         // /_api/search/query?querytext='*'&selectproperties='workid%2cPreferredName'&sourceid='b09a7990-05ea-4af9-81ef-edfab16c4e31'
+		var deferred = jQuery.Deferred();
         $.ajax({
             url: "/_api/search/query?querytext='*'&rowlimit=200&selectproperties='workid%2cPreferredName'&sourceid='b09a7990-05ea-4af9-81ef-edfab16c4e31'",
             method: 'GET',
@@ -84,12 +81,14 @@ Appsters.Graph = (function ($) {
                 //aLoaded = true;
                 //if (oLoaded)
                 //    callback(children);
-                callbackLoadActors(actors);
+                typeof callbackLoadActors === 'function' && callbackLoadActors(actors);
+				deferred.resolve()
             },
             error: function (err) {
                 showMessage('<div id="private" class="message">Error calling Office Graph for actors...refresh your browser and try again (<span class="hyperlink" onclick="javascript:$(this).parent().remove();">dismiss</span>).</div>');
             }
         });
+		return deferred.promise();
     },
 
     parseActorResults = function (row) {
@@ -126,18 +125,21 @@ Appsters.Graph = (function ($) {
     }
 
     return {
-        getMostModified: function (from, to) {
-            return getMostModified(from, to, function () {
-                //alert(mostModified.length);
-            });
+        getMostModified: function (callback) {
+            return getMostModified(callback);
         },
         getMostViews: function (from, to) {
             return getMostViews(from, to);
         },
         getAllActors: function () {
-            getAllActors();
+            return getAllActors();
         }
     };
 })(jQuery);
 
-Appsters.Graph.getAllActors();
+// usage example
+//	Appsters.Graph.getAllActors().done(function(){
+//		Appsters.Graph.getMostModified(function(data){
+//			console.log(data);
+//		});
+//	});

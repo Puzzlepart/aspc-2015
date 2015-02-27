@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1.1/office.js" type="text/javascript"></script>  -->
+
+
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+
+    <script src="../../Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="../../signalr/hubs"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //setup signalR hub
+
+            $.connection.hub.logging = true;
+            var hub = $.connection.morseHub;
+
+            hub.client.sendMessage = function (message) {
+                $("#buffer").text($("#buffer").text() + message);
+            };
+
+
+            $.connection.hub.start().done(function () {
+                hub.server.initialize();
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="content-header" style="background-color: black;color:white">
+        <img src="../../Images/logo.png"/>
+        <div class="padding">
+            <h1 id="header">Button Re-entry</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <div id="buffer" style="font-size:2em"></div>
+            <p>
+                <button id="get-data-from-selection" onclick=" Appsters.Button.putTextInDocument() " style="width: 100px;height:100px">COPY IT!</button>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
