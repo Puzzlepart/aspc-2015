@@ -40,9 +40,6 @@
 </asp:content>
 <asp:content contentplaceholderid="PlaceHolderMain" runat="server">
     <div class="appsters" ng-app="StatisticsAngularApp">
-        <div ng-controller="keyStatisticsCtrl">
-            <div>{{TracerBullet}}</div>
-        </div>
         <div class="stats-row">
             <div class="stats-object" ng-controller="contentTypesChartCtrl" style="margin-right:20px">
                 <h2 class="ms-webpart-titleText">Content Type Distribution</h2>

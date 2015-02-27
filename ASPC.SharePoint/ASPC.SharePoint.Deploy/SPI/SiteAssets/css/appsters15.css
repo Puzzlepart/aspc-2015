@@ -89,11 +89,14 @@ height:450px;
     overflow: hidden;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
+.appsters.enemies .paging {
+    float: left;
+
+}
+.appsters.enemies .paging > div {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #333;
 }
 
 /* Smartphones (landscape) ----------- */
@@ -102,8 +105,3 @@ and (max-width : 751px) {
 .galactic-logo { width:100%; }
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
