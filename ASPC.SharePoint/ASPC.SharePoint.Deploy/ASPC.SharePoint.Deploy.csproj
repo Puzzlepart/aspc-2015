@@ -113,7 +113,6 @@
     <Content Include="SPI\SiteAssets\img\yoda.png" />
     <Content Include="SPI\SiteAssets\js\angular.min.js" />
     <Content Include="SPI\SiteAssets\js\appsters.generics.js" />
-    <Content Include="SPI\SiteAssets\js\appsters.enemies.js" />
     <Content Include="SPI\SiteAssets\js\jquery-1.11.2.min.js" />
     <Content Include="SPI\SiteAssets\js\main.js" />
     <Content Include="SPI\SiteAssets\js\appsters.stats.js" />
