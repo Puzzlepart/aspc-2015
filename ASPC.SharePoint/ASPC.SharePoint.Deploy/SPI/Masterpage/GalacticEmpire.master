@@ -79,40 +79,21 @@
 			<!-- ===== STARTER: Main Scrolling Body Starts Here =============================================================================== -->
 			<div id="s4-workspace">
 				<div id="s4-bodyContainer">
+
 				
 				<!-- ===== STARTER: This decides where the web part menu lives ===================================================== -->
 				<div id="DeltaPlaceHolderMain" runat="server">
-				
-				<!-- ===== STARTER: style.css adds width and margin =========================================================================================== -->
-				<div class="customWidth">
-				
-					<!-- ===== STARTER: SharePoint looks for this div ID s4-titlerow for the "Focus on Content" Button ======================== -->
-					<div id="s4-titlerow">
-					
-						<!-- ===== STARTER: Site Logo with link to root ======================================================================= -->
-						<div class="ms-dialogHidden">
-							<SharePoint:SPLinkButton runat="server" NavigateUrl="~sitecollection/">
-								<SharePoint:SiteLogoImage ID="x63829de2201a4365a3904788f682d0a3" LogoImageUrl="&lt;% $SPUrl:~sitecollection/_catalogs/masterpage/StarterBranding/logo.png %&gt;" AlternateText="Back to Home" runat="server" />
-							</SharePoint:SPLinkButton>
-						</div>
-						
-						<!-- ===== STARTER: Global navigation ================================================================================= -->
-						<div class="ms-dialogHidden">
-							<div class="ms-displayInline ms-core-navigation ms-dialogHidden">
-								<PublishingNavigation:PortalSiteMapDataSource ID="topSiteMap" runat="server" EnableViewState="false" SiteMapProvider="GlobalNavigationSwitchableProvider" StartFromCurrentNode="true" StartingNodeOffset="0" ShowStartingNode="false" TrimNonCurrentTypes="Heading" />
-								<SharePoint:AspMenu ID="TopNavigationMenu" runat="server" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="&lt;%$Resources:wss,navigation_accesskey%&gt;" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="1" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="1" SkipLinkText="" />												
-							</div>
-						</div>
-						
-						<!-- ===== STARTER: Search Control ==================================================================================== -->
-						<div class="ms-dialogHidden">
-							<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
-								<SearchWC:SearchBoxScriptWebPart UseSiteCollectionSettings="true" EmitStyleReference="false" ShowQuerySuggestions="true" ChromeType="None" UseSharedSettings="true" TryInplaceQuery="false" ServerInitialRender="true" runat="server" />
-							</asp:ContentPlaceHolder>
-						</div>
-						
-						<!-- ===== STARTER: Breadcrumbs ======================================================================================= -->
-						<div class="ms-dialogHidden">
+<div class="hero">
+<div class="galactic-header">
+	<div class="header-image"></div>
+	<div class="header-content">
+	 <img src="/sites/GalacticEmpire/Site Assets/img/GalacticEmpireLogo.png" class="galactic-logo"/>
+	 <img src="/sites/GalacticEmpire/Site Assets/img/galacticempireicon.png" class="galactic-icon"/>
+	</div>
+</div>
+</div>
+<div class="main-empire-content">
+<div class="content-wrapper">
 							<h1 id="pageTitle" class="ms-core-pageTitle">	
 								<!-- ===== STARTER: SP Reqs DeltaPlaceHolderPageTitleInTitleArea and PlaceHolderPageTitleInTitleArea for adding Apps in Site Content =================== -->
 								<SharePoint:AjaxDelta id="DeltaPlaceHolderPageTitleInTitleArea" runat="server">							
@@ -137,47 +118,60 @@
 									</SharePoint:ScriptBlock>
 								</div>
 							</h1>
-						</div>
-					</div>
-					
-				<!-- ===== STARTER: Body Area (includes left nav and body) ==================================================================== -->
-					
-					<!-- ===== STARTER: Current navigation =========================================================================================== -->
-					<div id="sideNavBox" class="ms-dialogHidden ms-forceWrap ms-noList">
-						<div class="ms-core-navigation">
-							<!-- ===== STARTER: SP Reqs PlaceHolderLeftNavBar for adding Apps in Site Content =================== -->						
-							<asp:ContentPlaceHolder ID="PlaceHolderLeftNavBar" runat="server">
-								<asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" runat="server">
-									<!-- ===== STARTER: hide the quick launch for any page the doesn't override the PlaceHolderLeftNavBar ============ -->
-									<!-- ===== STARTER: if you want the navigation back you can add it from the collab master ============ -->
-									<style type="text/css">
-										#contentBox { margin-left: 0; }
-										#sideNavBox { display: none; }
-									</style>
-								</asp:ContentPlaceHolder>
-								<asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchTop" runat="server" />
-								<asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" runat="server" />
-								<asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" runat="server" />
-								<asp:ContentPlaceHolder ID="PlaceHolderLeftActions" runat="server" />
-								<asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchBottom" runat="server" />
-							</asp:ContentPlaceHolder>
-						</div>
-					</div>	
-					
-					<!-- ===== STARTER: Main Content ========================================================================================== -->
-					<div id="contentBox">
-						
-							<!-- ===== STARTER: Main Placeholder gets replaced with content of the page ======================================= -->
-							<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
-						
-					</div>
-					<div style="clear:both;" />
-					
-					<div class="ms-dialogHidden">
-						&copy; Copyright 2012 StarterBranding
-					</div>					
-				</div>
-				</div>
+	<div class="main-content-wrapper">
+	<div class="target">
+		<div class="target-image">
+			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
+		</div>
+		<div class="target-content">
+			<h2>Luke Skywalker</h2>
+			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
+			<p class="target-location">Last Known Location: Rebel HQ</p>
+			<p class="target-reward">REWARD: 10,0000</p>
+		</div>
+	</div>
+
+	<div class="target">
+		<div class="target-image">
+			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
+		</div>
+		<div class="target-content">
+			<h2>Luke Skywalker</h2>
+			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
+			<p class="target-location">Last Known Location: Rebel HQ</p>
+			<p class="target-reward">REWARD: 10,0000</p>
+		</div>
+	</div>
+	<div class="target">
+		<div class="target-image">
+			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
+		</div>
+		<div class="target-content">
+			<h2>Luke Skywalker</h2>
+			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
+			<p class="target-location">Last Known Location: Rebel HQ</p>
+			<p class="target-reward">REWARD: 10,0000</p>
+		</div>
+	</div>
+	<div class="target">
+		<div class="target-image">
+			<img src="/sites/GalacticEmpire/Site Assets/img/lukeskywalker.png">
+		</div>
+		<div class="target-content">
+			<h2>Luke Skywalker</h2>
+			<p class="target-description">Luke skywalker is the top jedi. We need to kill this guy quick</p>
+			<p class="target-location">Last Known Location: Rebel HQ</p>
+			<p class="target-reward">REWARD: 10,0000</p>
+		</div>
+	</div>
+	</div>
+	<div class="layoutpage-content">
+	<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+	</div>
+</div>
+</div>
+				<!-- ===== STARTER: style.css adds width and margin =========================================================================================== -->
+
 			</div>
 			</div>
 			<!-- ===== STARTER: Main Scrolling Body Ends Here ================================================================================= -->

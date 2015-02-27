@@ -7,5 +7,14 @@
     <File Path="js\appsters.stats.js" Url="js/appsters.stats.js"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
     <File Path="css\appsters15.css" Url="css/appsters15.css" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
     <File Path="js\appsters.generics.js" Url="js/appsters.generics.js" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="img\c-3po.png" Url="img/c-3po.png" />
+    <File Path="img\galacticempireIcon.png" Url="img/galacticempireIcon.png" />
+    <File Path="img\GalacticEmpireLogo.png" Url="img/GalacticEmpireLogo.png" />
+    <File Path="img\hansolo.png" Url="img/hansolo.png" />
+    <File Path="img\headerbg.png" Url="img/headerbg.png" />
+    <File Path="img\lukeskywalker.png" Url="img/lukeskywalker.png" />
+    <File Path="img\obiwan.png" Url="img/obiwan.png" />
+    <File Path="img\princesleia.png" Url="img/princesleia.png" />
+    <File Path="img\yoda.png" Url="img/yoda.png" />
   </Module>
 </Elements>
