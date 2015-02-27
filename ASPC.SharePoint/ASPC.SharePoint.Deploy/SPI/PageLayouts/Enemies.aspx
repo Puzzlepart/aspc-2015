@@ -26,6 +26,8 @@
                     <div class="keyData">
                         <span>Birth year: {{character.birth_year}}</span>
                         <span>Gender: {{character.gender}}</span>
+                        <span>Skin color: {{character.skin_color}}</span>
+                        <span>Hair color: {{character.hair_color}}</span>
                     </div>
                     <div class="actions">
                         <div id="AddWanted">Add as Wanted</div>
