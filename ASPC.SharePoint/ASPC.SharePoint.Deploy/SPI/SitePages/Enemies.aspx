@@ -20,6 +20,7 @@
 <asp:content id="Content3" contentplaceholderid="PlaceHolderAdditionalPageHead" runat="server">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
     <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/js/appsters.generics.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
     <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/js/appsters.enemies.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
     <SharePoint:CssRegistration Name="&lt;% $SPUrl:~sitecollection/SiteAssets/css/appsters15.css %&gt;" runat="server" After="corev15.css" ></SharePoint:CssRegistration>
@@ -42,8 +43,13 @@
                         <span>Birth year: {{character.birth_year}}</span>
                         <span>Gender: {{character.gender}}</span>
                     </div>
+                    <div class="actions">
+                        <button id="AddWanted">Add as Wanted</button>
+                    </div>
                 </div>
             </div> 
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
         </div>
     </div>
     <script type="text/javascript">

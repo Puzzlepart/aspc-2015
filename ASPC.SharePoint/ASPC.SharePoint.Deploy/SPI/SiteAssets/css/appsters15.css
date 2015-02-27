@@ -76,6 +76,10 @@ height:450px;
 }
 .appsters.enemies .character .nameAndInfo {
 	float: left;
+	margin-left: 20px;
+}
+.appsters.enemies .character .keyData span {
+	float: left;
 }
 .appsters.enemies .character .name {
     font-size: 24px;
