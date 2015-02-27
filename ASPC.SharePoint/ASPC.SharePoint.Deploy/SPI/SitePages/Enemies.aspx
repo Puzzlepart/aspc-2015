@@ -36,10 +36,12 @@
         <div ng-controller="enemiesListCtrl">
             <div class="character" ng-repeat="character in people">  
                 <div class="image"><img src="{{character.imageUrl}}"/></div>
-                <div class="name">{{character.name}}</div>
-                <div class="keyData">
-                    <span>Birth year: {{character.birth_year}}</span>
-                    <span>Gender: {{character.gender}}</span>
+                <div class="nameAndInfo">
+                    <div class="name">{{character.name}}</div>
+                    <div class="keyData">
+                        <span>Birth year: {{character.birth_year}}</span>
+                        <span>Gender: {{character.gender}}</span>
+                    </div>
                 </div>
             </div> 
         </div>
