@@ -44,12 +44,12 @@
                         <span>Gender: {{character.gender}}</span>
                     </div>
                     <div class="actions">
-                        <button id="AddWanted">Add as Wanted</button>
+                        <div id="AddWanted">Add as Wanted</div>
                     </div>
                 </div>
             </div> 
-            <button id="previous">Previous</button>
-            <button id="next">Next</button>
+            <div id="previous">Previous</div>
+            <div id="next">Next</div>
         </div>
     </div>
     <script type="text/javascript">
