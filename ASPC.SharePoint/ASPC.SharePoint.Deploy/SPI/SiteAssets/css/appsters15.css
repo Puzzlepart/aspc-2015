@@ -65,7 +65,12 @@ height:450px;
 .appsters.enemies .character:nth-child(10){
    display:none;
 }
-.appsters.enemies .character { position:relative; }
+.appsters.enemies .character {
+     position:relative;
+}
+.appsters.enemies .character.wantedClicked {
+    display: none;
+}
 .appsters.enemies .character:hover {
     background:grey;
 	color:white;
@@ -88,6 +93,9 @@ height:450px;
 .appsters.enemies .character img {
     width: 150px;
     overflow: hidden;
+}
+.appsters.enemies .character .added {
+    color: #9f0205;
 }
 .keyData span { display:block; }
 .actions { position:absolute; bottom:10px; }
