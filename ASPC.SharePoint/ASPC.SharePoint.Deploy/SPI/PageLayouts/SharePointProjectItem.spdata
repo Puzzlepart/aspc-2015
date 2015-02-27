@@ -3,5 +3,6 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="PageLayouts\" Type="ElementManifest" />
     <ProjectItemFile Source="Enemies.aspx" Target="PageLayouts\" Type="ElementFile" />
+    <ProjectItemFile Source="Dashboard.aspx" Target="PageLayouts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
