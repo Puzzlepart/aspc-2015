@@ -6,10 +6,10 @@ Appsters.Enemies.InitPage = function () {
     var statisticsAngularApp = angular.module('StatisticsAngularApp', []);
 
     jQuery('body').delegate('#next', 'click', function () {
-        Appsters.Enemies.BindEnemiesController(statisticsAngularApp);
+        window.location.reload();
     });
     jQuery('body').delegate('#previous', 'click', function () {
-        Appsters.Enemies.BindEnemiesController(statisticsAngularApp);
+        window.location.reload();
     });
     jQuery('body').delegate('#AddWanted', 'click', function () {
         Appsters.Enemies.AddWantedItem(event);
@@ -58,6 +58,9 @@ Appsters.Enemies.GetImageForCharacters = function (characters, $scope, $http) {
 
 Appsters.Enemies.AddWantedItem = function (event) {
     var deferred = jQuery.Deferred();
+
+    jQuery(event.target).after('<span class="added">Added to the wanted list</span>');
+    jQuery(event.target).hide();
 
     var characterObject = jQuery(event.target).parents('.character');
 
