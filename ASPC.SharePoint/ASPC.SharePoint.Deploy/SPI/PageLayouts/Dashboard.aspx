@@ -18,17 +18,21 @@
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
     <div class="appsters" ng-app="StatisticsAngularApp">
         <div class="stats-row">
-            <div class="stats-object" ng-controller="contentTypesChartCtrl" style="width: 33%;float: left;">
+            <div class="stats-object" ng-controller="contentTypesChartCtrl" style="width: 50%;float: left;">
                 <h2 class="ms-webpart-titleText">Content Type Distribution</h2>
                 <div id="content-type-chart"></div>
             </div>
-			<div class="stats-object" style="width: 33%;float: left;">
+			<div class="stats-object" style="width: 50%;float: left;">
                 <h2 class="ms-webpart-titleText">Users With Most Modifications</h2>
                 <div id="piechart" style="height: 300px;"></div>
             </div>
-			<div class="stats-object" style="width: 30%; text-align:left;">
+			<div class="stats-object" style="width: 50%; text-align:left; float:left;">
                 <h2 class="ms-webpart-titleText">Most Modified Documents</h2>
                 <div id="barchart" style="" ></div>
+            </div>
+			<div class="stats-object" ng-controller="documentViewsLifetime" style="width: 50%; text-align:left; float:left;">
+                <h2 class="ms-webpart-titleText">Most Viewed files</h2>
+                <div id="numberofviewschart" style="" ></div>
             </div>
 			
 		</div>
@@ -67,11 +71,10 @@
 	    }
 
 	    function drawTable(data) {
-	        console.log(data);
-	        var stagingArray = [["Document", "Weight"]];
+	        var stagingArray = [["Document"]];
 	        for (var key in data) {
 	            var documentName = data[key].path.substr(data[key].path.lastIndexOf("/") + 1)
-	            stagingArray.push(['<a href="' + data[key].path + '">' + documentName + '</a>', data[key].edgeWeight]);
+	            stagingArray.push(['<a href="' + data[key].path + '">' + documentName + '</a>']);
 	        }
 
 	        var dataTable = google.visualization.arrayToDataTable(stagingArray);
