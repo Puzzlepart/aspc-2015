@@ -1,4 +1,4 @@
-var Appsters = Appsters || {}
+﻿var Appsters = Appsters || {}
 
 Appsters.Graph = (function ($) {
     var actors = [],
@@ -20,6 +20,7 @@ Appsters.Graph = (function ($) {
 
         var queryUrl = "/_api/search/query?querytext='" + queryText + "'&rowlimit=500&properties='GraphQuery:" + graphQuery + ",GraphRankingModel:{\"features\"\\:[{\"function\"\\:\"EdgeWeight\"}]}'&rankingmodelid='0c77ded8-c3ef-466d-929d-905670ea1d72'";
         var mostModified = [];
+        var mostViewed = [];
 
         $.ajax({
             url: queryUrl,
@@ -61,7 +62,7 @@ Appsters.Graph = (function ($) {
 
     getAllActors = function (callbackLoadActors) {
         // /_api/search/query?querytext='*'&selectproperties='workid%2cPreferredName'&sourceid='b09a7990-05ea-4af9-81ef-edfab16c4e31'
-		var deferred = jQuery.Deferred();
+        var deferred = jQuery.Deferred();
         $.ajax({
             url: "/_api/search/query?querytext='*'&rowlimit=200&selectproperties='workid%2cPreferredName'&sourceid='b09a7990-05ea-4af9-81ef-edfab16c4e31'",
             method: 'GET',
@@ -82,13 +83,13 @@ Appsters.Graph = (function ($) {
                 //if (oLoaded)
                 //    callback(children);
                 typeof callbackLoadActors === 'function' && callbackLoadActors(actors);
-				deferred.resolve()
+                deferred.resolve()
             },
             error: function (err) {
                 showMessage('<div id="private" class="message">Error calling Office Graph for actors...refresh your browser and try again (<span class="hyperlink" onclick="javascript:$(this).parent().remove();">dismiss</span>).</div>');
             }
         });
-		return deferred.promise();
+        return deferred.promise();
     },
 
     parseActorResults = function (row) {

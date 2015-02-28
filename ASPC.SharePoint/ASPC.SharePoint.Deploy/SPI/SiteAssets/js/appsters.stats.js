@@ -6,16 +6,16 @@ Appsters.Stats.InitPage = function () {
     // Load the Visualization API and the piechart package.
     google.load('visualization', '1.1', { 'packages': ['corechart', 'bar'] });
 
-	var statisticsAngularApp = angular.module('StatisticsAngularApp', []);
+    var statisticsAngularApp = angular.module('StatisticsAngularApp', []);
 
-	// Bind angular app controllers
-	Appsters.Stats.BindControllers(statisticsAngularApp);
+    // Bind angular app controllers
+    Appsters.Stats.BindControllers(statisticsAngularApp);
 };
 
 Appsters.Stats.BindControllers = function (angularApp) {
 
     angularApp.controller('keyStatisticsCtrl', function ($scope, $http) {
-    	Appsters.Stats.CreateKeyStatisticsController($scope, $http);
+        Appsters.Stats.CreateKeyStatisticsController($scope, $http);
     });
 
     angularApp.controller('contentTypesChartCtrl', function ($scope, $http) {
@@ -25,6 +25,18 @@ Appsters.Stats.BindControllers = function (angularApp) {
             headers: { "Accept": "application/json;odata=verbose" }
         }).success(function (data, status, headers, config) {
             Appsters.Stats.DrawContentTypeDistributionChart(data);
+        }).error(function (data, status, headers, config) {
+            HandleError(data, status, headers, config);
+        });
+    });
+    // https://aspc1506.sharepoint.com/sites/darkportal/_api/search/query?querytext='contentclass:STS_ListItem_DocumentLibrary'&selectproperties='Title%2c+Path%2c+ViewsLifeTime'&sortlist='ViewsLifeTime:descending'
+    angularApp.controller('documentViewsLifetime', function ($scope, $http) {
+        $http({
+            method: 'GET',
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/search/query?querytext='contentclass:STS_ListItem_DocumentLibrary'&selectproperties='Title%2c+Path%2c+ViewsLifeTime%2c+ViewsRecent'&sortlist='ViewsLifeTime:descending'",
+            headers: { "Accept": "application/json;odata=verbose" }
+        }).success(function (data, status, headers, config) {
+            Appsters.Stats.DrawViewsLifeTimeTable(data);
         }).error(function (data, status, headers, config) {
             HandleError(data, status, headers, config);
         });
@@ -58,6 +70,45 @@ Appsters.Stats.DrawContentTypeDistributionChart = function (data) {
     }
 };
 
+Appsters.Stats.DrawViewsLifeTimeTable = function (data) {
+    if (data.d.query.PrimaryQueryResult != null) {
+
+        //data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows
+        //data.d.query.PrimaryQueryResult.RelevantResults.RowCount
+        //data.d.query.PrimaryQueryResult.RelevantResults.TotalRows
+
+        var results = data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows.results;
+        var googleInputArray = [["Document", "Views Lifetime", "Views Recent"]];
+        for (var i = 0; i < results.length; i++) {
+            var resultFields = results[i].Cells.results;
+            var path = "";
+            var viewsLT = 0;
+            var viewsRecent = 0;
+            for (var y = 0; y < resultFields.length; y++) {
+
+                if (resultFields[y].Key === "Path") path = resultFields[y].Value;
+                else if (resultFields[y].Key === "ViewsLifeTime") {
+                    viewLT = parseInt(resultFields[y].Value);
+                    console.log(resultFields[y].Value);
+                }
+                else if (resultFields[y].Key === "ViewsRecent") viewRecent = parseInt(resultFields[y].Value);
+            }
+            var documentName = path.substr(path.lastIndexOf("/") + 1)
+            console.log([documentName, viewLT, viewRecent]);
+            googleInputArray.push([documentName, viewLT, viewRecent]);
+        }
+        var dataTable = google.visualization.arrayToDataTable(googleInputArray);
+        var options = {
+            'width': 390,
+            'height': 300
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('numberofviewschart'));
+        chart.draw(dataTable, options);
+
+        console.log(data.d.query.PrimaryQueryResult);
+    }
+};
+
 Appsters.Stats.TransformSearchResultToAngularReadableFormat = function (data) {
     var pages = [];
     //We need to transform data from the search results index-array format to property-format
@@ -73,6 +124,8 @@ Appsters.Stats.TransformSearchResultToAngularReadableFormat = function (data) {
     });
     return pages;
 };
+
+
 
 Appsters.Stats.AddChartRefinementData = function (refinerData, chartData) {
     var otherCategory = 0;
