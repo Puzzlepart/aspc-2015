@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPC.TakeDown", "ASPC.TakeDown.csproj", "{00937419-C9E5-4C4C-8150-C4A6335AC8EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5990BA79-1E4D-4C74-BCF2-51CA1B5A9D1A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{37D5C174-27E5-432B-964E-2490282EF15E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ASPCTakeDown-WAWS-dev.json = PublishScripts\Configurations\ASPCTakeDown-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00937419-C9E5-4C4C-8150-C4A6335AC8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00937419-C9E5-4C4C-8150-C4A6335AC8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00937419-C9E5-4C4C-8150-C4A6335AC8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00937419-C9E5-4C4C-8150-C4A6335AC8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37D5C174-27E5-432B-964E-2490282EF15E} = {5990BA79-1E4D-4C74-BCF2-51CA1B5A9D1A}
+	EndGlobalSection
+EndGlobal

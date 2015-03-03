@@ -1,0 +1,15 @@
+{
+"Id": "f60e57b9-e09e-4638-9188-f243df456335",
+"Manifest":"{
+    'extensionPoints' : [
+        { 'type' : 'FileHandler',
+          'properties': { 
+               'extension' : '7z',
+               'fileIcon' : 'https://aspc1506-my.sharepoint.com/_layouts/15/images/iczip.gif', 
+               'previewUrl' : 'https://aspc15preview.azurewebsites.net/FileHandler/preview', 
+               'openUrl' : 'https://aspc15preview.azurewebsites.net/FileHandler/open'
+           }  
+         }
+	 ]
+  }"
+}

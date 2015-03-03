@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morse-Office-WebAPI", "Morse-Office-WebAPI\Morse-Office-WebAPI.csproj", "{9EAC5CA3-CF68-4FA3-8BBE-F5AE0599993C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{738610AE-49FA-4930-9608-4F2682D499A1}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{989019CC-2006-4C85-BFDB-5AE7FCC7EB28}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\Morse-Office-WebAPI-WAWS-dev.json = PublishScripts\Configurations\Morse-Office-WebAPI-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EAC5CA3-CF68-4FA3-8BBE-F5AE0599993C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAC5CA3-CF68-4FA3-8BBE-F5AE0599993C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAC5CA3-CF68-4FA3-8BBE-F5AE0599993C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAC5CA3-CF68-4FA3-8BBE-F5AE0599993C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{989019CC-2006-4C85-BFDB-5AE7FCC7EB28} = {738610AE-49FA-4930-9608-4F2682D499A1}
+	EndGlobalSection
+EndGlobal
